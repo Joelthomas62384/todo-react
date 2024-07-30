@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar";
+
 import { v4 as uuidv4 } from 'uuid';
 import TodosList from "./components/TodosList";
 import { useEffect, useState, useRef } from "react";
@@ -66,7 +66,7 @@ function App() {
 
     return (
         <>
-            <Navbar />
+            
             <div className="container mt-14 md:w-2/4 bg-violet-400 h-[30rem] md:min-h-[35rem] mx-auto text-white p-5 rounded-lg shadow-2xl">
                 <h1 className=" text-3xl font-bold [text-shadow:_0_3px_8px_rgb(0_0_0_/_40%)]">Todo Lists</h1>
                 <div className="flex mt-4 gap-4 items-center">
