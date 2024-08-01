@@ -107,7 +107,7 @@ function App() {
                     {((todos.filter((e) => e.isCompleted).length === 0 && showFinished) || (todos.filter((e) => e.isCompleted === false).length === 0 && showFinished === false)) && (
                         <div className=" text-lg text-gray-300">There is no Tasks</div>
                     )}
-                    {todos.map((item, index) => (
+                    {[...todos].reverse().map((item, index) => (
                         ((showFinished && item.isCompleted === true) || (showFinished === false && item.isCompleted === false)) &&
                         <TodosList
                             key={index}
